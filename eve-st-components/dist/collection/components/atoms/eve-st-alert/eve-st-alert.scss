@@ -1,0 +1,94 @@
+
+
+@import '../../style.scss';
+
+.flex_100 {
+  flex: 100%;
+}
+
+.eve-alert {
+    background: $success-color;
+    border: 1px solid $success-color;
+    padding: 4px;
+    padding-left: 8px;
+    color: white;
+    position: relative;
+    display: flex;
+    // align-items: center;
+    // justify-content: center;
+    flex: 100%;
+    height: auto;
+    min-height: 54px;
+       
+    .close_btn {
+      background: rgba(#000,.1);
+      font-size: 20px;
+      line-height: 1;
+      position: absolute;
+      right: 0;
+      top: 0;
+      cursor: pointer;
+      transition: 0.5s;
+      
+      &:hover {
+        background: rgba(#fff,.3);
+        color: #f00;
+      }
+    }
+
+    &.border {
+      border-radius: 3px;
+    }
+
+    &.success {
+      background: $success-color;      
+      border-color: $success-color;    
+    }
+    &.info {
+    background: $info-color;
+      border-color: $info-color;
+    }
+    &.warning {
+      background: $warning-color;
+      border-color: $warning-color;
+    }
+    &.danger {
+      background: $error-color;
+      border-color: $error-color;
+    }
+    &.purple {
+      background: $purple-color;
+      border-color: $purple-color;
+    }
+    
+
+    &.outline {
+      background: none !important;
+      color: inherit;
+
+      .close_btn {
+        background: none;
+      }
+
+      &.success {
+        color: $success-color;      
+      }
+      &.info {
+      color: $info-color;
+      }
+      &.warning {
+        color: $warning-color;
+      }
+      &.danger {
+        color: $error-color;
+      }
+      &.purple {
+        color: $purple-color;
+      }
+    }
+    &.custom {
+      &:not(.outline) {
+        color: #fff !important;
+      }
+    }
+  }

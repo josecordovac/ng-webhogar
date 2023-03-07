@@ -1,0 +1,65 @@
+::-webkit-scrollbar-track {
+  border-radius: 25px;
+  background-color: #F5F5F5; }
+
+::-webkit-scrollbar {
+  width: 3px;
+  background-color: #F5F5F5; }
+
+::-webkit-scrollbar-thumb {
+  border-radius: 25px;
+  background-color: #cfcfcf; }
+
+.eve-avatar .imagen, .eve-avatar .icon {
+  margin-right: 8px;
+  border-radius: 50px; }
+
+.eve-avatar .imagen.xsmall {
+  max-width: 32px; }
+
+.eve-avatar .imagen.small {
+  max-width: 48px; }
+
+.eve-avatar .imagen.medium {
+  max-width: 64px; }
+
+.eve-avatar .imagen.large {
+  max-width: 80px; }
+
+.eve-avatar .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 57px;
+  width: 57px;
+  background-color: rgba(204, 204, 204, 0.5);
+  color: white;
+  border-radius: 37px; }
+  .eve-avatar .icon.success {
+    background: #5bc500;
+    border-color: #5bc500; }
+  .eve-avatar .icon.info {
+    background: #00A9E0;
+    border-color: #00A9E0; }
+  .eve-avatar .icon.warning {
+    background: #FFB74D;
+    border-color: #FFB74D; }
+  .eve-avatar .icon.danger {
+    background: #e24d4d;
+    border-color: #e24d4d; }
+  .eve-avatar .icon.xsmall {
+    width: 32px;
+    height: 32px;
+    font-size: 16px; }
+  .eve-avatar .icon.small {
+    width: 48px;
+    height: 48px;
+    font-size: 32px; }
+  .eve-avatar .icon.medium {
+    width: 64px;
+    height: 64px;
+    font-size: 40px; }
+  .eve-avatar .icon.large {
+    width: 80px;
+    height: 80px;
+    font-size: 48px; }

@@ -1,0 +1,46 @@
+:host {
+
+
+    ion-content {
+        --background: var(--ion-color-light);
+        ion-content {
+            .text-trio {
+                font-size:24px;
+            }
+            eve-st-alert  {
+               margin: 4px;
+               .alert_body {
+                   width: 100%;
+                   padding-left: 16%;
+                   padding-top: 16px;
+               }
+               .alert_arrow {
+                  padding-top: 23px;
+                  .alert_icon {
+                    width: 35px; 
+                    height: 35px;
+                  }
+               }
+            }
+        }
+    }
+
+    ion-item {
+        border-radius: 0;
+        border-bottom: 1px dotted var(--ion-color-medium);
+    }
+
+    ion-card {
+        &.no-radius {
+            border-radius: 0;
+        }
+    }
+
+    
+
+    eve-st-modal::shadow  div eve-st-button::shadow button {
+        background: red !important;
+        border-bottom-color: yellow!important;
+    }
+}
+

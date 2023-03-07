@@ -1,0 +1,23 @@
+::-webkit-scrollbar-track {
+  border-radius: 25px;
+  background-color: #F5F5F5; }
+
+::-webkit-scrollbar {
+  width: 3px;
+  background-color: #F5F5F5; }
+
+::-webkit-scrollbar-thumb {
+  border-radius: 25px;
+  background-color: #cfcfcf; }
+
+.eve-item {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  min-height: 47px; }
+  .eve-item.line-divider {
+    border-bottom: 1px solid #ddd; }
+  .eve-item .item-align-center {
+    align-items: center; }
+  .eve-item .item-justify-center {
+    justify-content: center; }

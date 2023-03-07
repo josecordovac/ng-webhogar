@@ -1,0 +1,353 @@
+{
+  "tags": [
+    {
+      "label": "eve-st-alert",
+      "description": "",
+      "attributes": [
+        {
+          "label": "borderradius",
+          "description": "Set button round corner",
+          "required": false
+        },
+        {
+          "label": "color",
+          "description": "button color",
+          "required": false
+        },
+        {
+          "label": "customcolor",
+          "description": "custom button color",
+          "required": false
+        },
+        {
+          "label": "label",
+          "description": "button label",
+          "required": false
+        },
+        {
+          "label": "type",
+          "description": "type of the button color",
+          "required": false
+        }
+      ]
+    },
+    {
+      "label": "eve-st-avatar",
+      "description": "",
+      "attributes": [
+        {
+          "label": "borderradius",
+          "description": "",
+          "required": false
+        },
+        {
+          "label": "color",
+          "description": "",
+          "required": false
+        },
+        {
+          "label": "customcolor",
+          "description": "",
+          "required": false
+        },
+        {
+          "label": "iconfa",
+          "description": "",
+          "required": false
+        },
+        {
+          "label": "imageurl",
+          "description": "",
+          "required": false
+        },
+        {
+          "label": "size",
+          "description": "",
+          "required": false
+        }
+      ]
+    },
+    {
+      "label": "eve-st-button",
+      "description": "",
+      "attributes": [
+        {
+          "label": "borderradius",
+          "description": "Set button round corner",
+          "required": false
+        },
+        {
+          "label": "color",
+          "description": "button color",
+          "required": false
+        },
+        {
+          "label": "customcolor",
+          "description": "custom button color",
+          "required": false
+        },
+        {
+          "label": "disabled",
+          "description": "Set disabled",
+          "required": false
+        },
+        {
+          "label": "height",
+          "description": "Set heights",
+          "required": false
+        },
+        {
+          "label": "id",
+          "description": "button label",
+          "required": false
+        },
+        {
+          "label": "label",
+          "description": "/**\n   button label",
+          "required": false
+        },
+        {
+          "label": "type",
+          "description": "type of the button color",
+          "required": false
+        }
+      ]
+    },
+    {
+      "label": "eve-st-checkbox",
+      "description": "",
+      "attributes": [
+        {
+          "label": "checked",
+          "description": "",
+          "required": false
+        },
+        {
+          "label": "color",
+          "description": "",
+          "required": false
+        },
+        {
+          "label": "customcolor",
+          "description": "",
+          "required": false
+        },
+        {
+          "label": "customcolorerror",
+          "description": "",
+          "required": false
+        },
+        {
+          "label": "disabled",
+          "description": "",
+          "required": false
+        },
+        {
+          "label": "errors",
+          "description": "",
+          "required": false
+        },
+        {
+          "label": "label",
+          "description": "",
+          "required": false
+        },
+        {
+          "label": "name",
+          "description": "",
+          "required": false
+        }
+      ]
+    },
+    {
+      "label": "eve-st-dropdown",
+      "description": "",
+      "attributes": [
+        {
+          "label": "color",
+          "description": "",
+          "required": false
+        },
+        {
+          "label": "customcolor",
+          "description": "",
+          "required": false
+        },
+        {
+          "label": "customcolorerror",
+          "description": "",
+          "required": false
+        },
+        {
+          "label": "disabled",
+          "description": "",
+          "required": false
+        },
+        {
+          "label": "errors",
+          "description": "",
+          "required": false
+        },
+        {
+          "label": "imageleftturl",
+          "description": "",
+          "required": false
+        },
+        {
+          "label": "imagerightturl",
+          "description": "",
+          "required": false
+        },
+        {
+          "label": "label",
+          "description": "",
+          "required": false
+        },
+        {
+          "label": "name",
+          "description": "",
+          "required": false
+        },
+        {
+          "label": "placeholder",
+          "description": "",
+          "required": false
+        }
+      ]
+    },
+    {
+      "label": "eve-st-item",
+      "description": "",
+      "attributes": [
+        {
+          "label": "line",
+          "description": "",
+          "required": false
+        }
+      ]
+    },
+    {
+      "label": "eve-st-list",
+      "description": "",
+      "attributes": []
+    },
+    {
+      "label": "eve-st-modal",
+      "description": "",
+      "attributes": [
+        {
+          "label": "color",
+          "description": "modal color",
+          "required": false
+        },
+        {
+          "label": "customcolor",
+          "description": "custom modal customcolor",
+          "required": false
+        },
+        {
+          "label": "show",
+          "description": "modal shoe",
+          "required": false
+        }
+      ]
+    },
+    {
+      "label": "eve-st-overlay",
+      "description": "",
+      "attributes": [
+        {
+          "label": "closeonclick",
+          "description": "overlay closeonclick",
+          "required": false
+        },
+        {
+          "label": "color",
+          "description": "overlay color",
+          "required": false
+        },
+        {
+          "label": "customcolor",
+          "description": "custom overlay customcolor",
+          "required": false
+        },
+        {
+          "label": "show",
+          "description": "overlay show",
+          "required": false
+        }
+      ]
+    },
+    {
+      "label": "eve-st-textbox",
+      "description": "",
+      "attributes": [
+        {
+          "label": "color",
+          "description": "",
+          "required": false
+        },
+        {
+          "label": "customcolor",
+          "description": "",
+          "required": false
+        },
+        {
+          "label": "customcolorerror",
+          "description": "",
+          "required": false
+        },
+        {
+          "label": "disabled",
+          "description": "",
+          "required": false
+        },
+        {
+          "label": "errors",
+          "description": "",
+          "required": false
+        },
+        {
+          "label": "label",
+          "description": "",
+          "required": false
+        },
+        {
+          "label": "name",
+          "description": "",
+          "required": false
+        },
+        {
+          "label": "placeholder",
+          "description": "",
+          "required": false
+        },
+        {
+          "label": "textcolor",
+          "description": "",
+          "required": false
+        },
+        {
+          "label": "type",
+          "description": "",
+          "required": false
+        },
+        {
+          "label": "usepattern",
+          "description": "",
+          "required": false
+        },
+        {
+          "label": "value",
+          "description": "",
+          "required": false
+        }
+      ]
+    },
+    {
+      "label": "eve-st-login-standard",
+      "description": "",
+      "attributes": []
+    }
+  ]
+}

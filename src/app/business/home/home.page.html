@@ -1,0 +1,88 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-menu-button color="light"></ion-menu-button>
+    </ion-buttons>
+    <ion-title>
+      <ion-text color="light" class="fw700">{{title}}</ion-text>
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-content padding offset-bottom>
+
+    <ion-card no-margin class="no-radius">
+      <ion-item lines="none" color="light">
+
+        <ion-text color="dark">(01) 2887746 Trio</ion-text>
+      </ion-item>
+    </ion-card>
+
+    <div style="margin-top: 16px; margin-bottom:16px">
+      <eve-st-textbox color="info" name="telefono" label="Ingrese su Numero" placeholder="Ingrese su Numero"
+        (onChange)="onChangeEvent($event)">
+      </eve-st-textbox>
+      <eve-st-button color="info" label="Consultar" (onClick)="onClickEvent()">
+      </eve-st-button>
+    </div>
+
+    <div text-center class="text-trio">
+      <ion-text color="medium">Tu Plan </ion-text>
+      <ion-text color="dark">Trío </ion-text>
+      <ion-text color="medium">tiene</ion-text>
+    </div>
+
+    <eve-st-alert color="purple" borderradius="10px" type="outline">
+      <eve-st-avatar imageurl="./assets/img/internet.png" size="large">
+      </eve-st-avatar>
+      <div class="alert_body">
+        <div class="alert_title">Internet</div>
+        <div class="alert_title">60 mps</div>
+      </div>
+      <div class="alert_arrow">
+        <ion-icon class="alert_icon" src="./assets/svg/arrow-forward.svg"></ion-icon>
+      </div>
+    </eve-st-alert>
+    <eve-st-alert color="success" borderradius="10px" type="outline">
+      <eve-st-avatar imageurl="./assets/img/tv.png" size="large">
+      </eve-st-avatar>
+      <div class="alert_body">
+        <div class="alert_title">Tv</div>
+        <div class="alert_title">Full HD</div>
+        <div class="alert_title"></div>
+      </div>
+      <div class="alert_arrow">
+        <ion-icon class="alert_icon" src="./assets/svg/arrow-forward.svg"></ion-icon>
+      </div>
+    </eve-st-alert>
+    <eve-st-alert color="info" borderradius="10px" type="outline">
+      <eve-st-avatar imageurl="./assets/img/fijo.png" size="large">
+      </eve-st-avatar>
+      <div class="alert_body">
+        <div class="alert_title">Fijo</div>
+        <div class="alert_title">Ilimitadas</div>
+        <div class="alert_title">Nivel Nacional</div>
+      </div>
+      <div class="alert_arrow">
+        <ion-icon class="alert_icon" src="./assets/svg/arrow-forward.svg"></ion-icon>
+      </div>
+    </eve-st-alert>
+  </ion-content>
+
+
+
+  <eve-st-modal (onClose)="closeEvent()" [show]="modalOpen">
+    <div slot="modal-header">Aviso</div>
+    <div slot="modal-body">
+      {{modalText}}
+    </div>
+    <div slot="modal-footer">
+      <eve-st-button label="Cerrar" color="info" borderradius="26px" (onClick)="closeEvent()">
+        <i style="margin-right: 8px" slot="image-left" class="fa fa-file"></i>
+      </eve-st-button>
+    </div>
+  </eve-st-modal>
+
+</ion-content>

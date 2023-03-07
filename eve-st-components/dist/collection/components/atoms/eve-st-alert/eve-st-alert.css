@@ -1,0 +1,72 @@
+::-webkit-scrollbar-track {
+  border-radius: 25px;
+  background-color: #F5F5F5; }
+
+::-webkit-scrollbar {
+  width: 3px;
+  background-color: #F5F5F5; }
+
+::-webkit-scrollbar-thumb {
+  border-radius: 25px;
+  background-color: #cfcfcf; }
+
+.flex_100 {
+  flex: 100%; }
+
+.eve-alert {
+  background: #5bc500;
+  border: 1px solid #5bc500;
+  padding: 4px;
+  padding-left: 8px;
+  color: white;
+  position: relative;
+  display: flex;
+  flex: 100%;
+  height: auto;
+  min-height: 54px; }
+  .eve-alert .close_btn {
+    background: rgba(0, 0, 0, 0.1);
+    font-size: 20px;
+    line-height: 1;
+    position: absolute;
+    right: 0;
+    top: 0;
+    cursor: pointer;
+    transition: 0.5s; }
+    .eve-alert .close_btn:hover {
+      background: rgba(255, 255, 255, 0.3);
+      color: #f00; }
+  .eve-alert.border {
+    border-radius: 3px; }
+  .eve-alert.success {
+    background: #5bc500;
+    border-color: #5bc500; }
+  .eve-alert.info {
+    background: #00A9E0;
+    border-color: #00A9E0; }
+  .eve-alert.warning {
+    background: #FFB74D;
+    border-color: #FFB74D; }
+  .eve-alert.danger {
+    background: #e24d4d;
+    border-color: #e24d4d; }
+  .eve-alert.purple {
+    background: #954897;
+    border-color: #954897; }
+  .eve-alert.outline {
+    background: none !important;
+    color: inherit; }
+    .eve-alert.outline .close_btn {
+      background: none; }
+    .eve-alert.outline.success {
+      color: #5bc500; }
+    .eve-alert.outline.info {
+      color: #00A9E0; }
+    .eve-alert.outline.warning {
+      color: #FFB74D; }
+    .eve-alert.outline.danger {
+      color: #e24d4d; }
+    .eve-alert.outline.purple {
+      color: #954897; }
+  .eve-alert.custom:not(.outline) {
+    color: #fff !important; }

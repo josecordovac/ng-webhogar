@@ -1,0 +1,157 @@
+// http://ionicframework.com/docs/theming/
+@import '~@ionic/angular/css/core.css';
+@import '~@ionic/angular/css/normalize.css';
+@import '~@ionic/angular/css/structure.css';
+@import '~@ionic/angular/css/typography.css';
+
+@import '~@ionic/angular/css/padding.css';
+@import '~@ionic/angular/css/float-elements.css';
+@import '~@ionic/angular/css/text-alignment.css';
+@import '~@ionic/angular/css/text-transformation.css';
+@import '~@ionic/angular/css/flex-utils.css';
+
+
+ion-item {
+    --ion-item-background: transparent;
+}
+
+// backgrounds //
+  .bg-white {
+    background-color: #fff;
+  }
+  
+  .bg-light {
+    background-color: var(--ion-color-light);
+  }
+  
+  .bg-dark {
+      background-color: var(--ion-color-dark);
+  }
+  
+  .bg-primary {
+      background-color: var(--ion-color-primary);
+  }
+  
+  .bg-secondary {
+      background-color: var(--ion-color-secondary);
+  }
+  
+  .bg-tertiary {
+      background-color: var(--ion-color-tertiary);
+  }
+  
+  .bg-profile {
+    background-image: var(--ion-color-primarybg);
+    // linear-gradient(135deg, var(--ion-color-dark), var(--ion-color-primary))
+  }
+  
+  .bg-main {
+      background-image: var(--ion-color-primarybg);
+      //linear-gradient(-135deg, var(--ion-color-medium), var(--ion-color-light))
+  }
+  
+  // Helpers //
+  .w100 {
+    width: 100%;
+  }
+  
+  .bold,
+  .fw500 {
+      font-weight: 500 !important;
+  }
+  
+  .fw700 {
+      font-weight: 700 !important;
+  }
+  
+  .text08 {
+    font-size: .8rem;
+  }
+  
+  .text1 {
+    font-size: 1rem !important;
+  }
+
+  .text12 {
+    font-size: 1.2rem;
+  }
+
+  .text15 {
+    font-size: 1.5rem;
+  }
+  
+  .text20 {
+    font-size: 2rem;
+  }
+  
+  .text-white {
+      color: #fff;
+  }
+  
+  .text-primary {
+      color: var(--ion-color-primary);
+  }
+
+  .text-secondary {
+    color: var(--ion-color-secondary);
+}
+  
+  .text-dark {
+    color: var(--ion-color-dark);
+  }
+  
+  // menu //
+  // Menu user profile
+  ion-toolbar.user-profile {
+  
+    .user-avatar {
+      width: 68px;
+      height: 68px;
+    }
+    .item-inner {
+      border-width: 0;
+    }
+  }
+  
+
+  
+  // Android card shadow
+  ion-card {
+    &.sc-ion-card-md-h {
+      box-shadow: 0 2px 4px rgba(var(--ion-color-dark-rgb),.24);
+    }
+  }
+  
+ 
+  //***********************************************************************************
+  // D r a w e r  T o o l B a r
+  // color: primary
+  //***********************************************************************************
+  ion-menu {
+    ion-header {
+      ion-toolbar {
+        &.ion-color-secondary {
+          --ion-color-base: var(--ion-color-secondary) !important;
+          //linear-gradient(135deg, var(--ion-color-dark), var(--ion-color-primary)) !important;
+          }
+      }
+    }
+  }
+
+  //***********************************************************************************
+  // H o m e  T o o l B a r
+  // color: primary
+  //***********************************************************************************
+
+  ion-toolbar {
+    &.ion-color-primary {
+      --ion-color-base: var(--ion-color-secondary) !important;
+    }
+  }
+  
+  .mto {
+    margin-top: 12px;
+    ion-icon {
+      margin-bottom: -2px;
+    }
+  }

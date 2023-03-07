@@ -1,0 +1,702 @@
+{
+  "components": [
+    {
+      "tag": "eve-st-alert",
+      "dependencies": [],
+      "componentClass": "eveStAlert",
+      "componentPath": "components/atoms/eve-st-alert/eve-st-alert.js",
+      "styles": {
+        "$": {
+          "stylePaths": [
+            "components/atoms/eve-st-alert/eve-st-alert.scss"
+          ]
+        }
+      },
+      "props": [
+        {
+          "name": "borderradius",
+          "type": "String",
+          "attr": "borderradius"
+        },
+        {
+          "name": "color",
+          "type": "String",
+          "attr": "color"
+        },
+        {
+          "name": "customcolor",
+          "type": "String",
+          "attr": "customcolor"
+        },
+        {
+          "name": "label",
+          "type": "String",
+          "attr": "label"
+        },
+        {
+          "name": "type",
+          "type": "String",
+          "attr": "type"
+        }
+      ]
+    },
+    {
+      "tag": "eve-st-avatar",
+      "dependencies": [],
+      "componentClass": "eveStAvatar",
+      "componentPath": "components/atoms/eve-st-avatar/eve-st-avatar.js",
+      "styles": {
+        "$": {
+          "stylePaths": [
+            "components/atoms/eve-st-avatar/eve-st-avatar.scss"
+          ]
+        }
+      },
+      "props": [
+        {
+          "name": "borderradius",
+          "type": "String",
+          "attr": "borderradius"
+        },
+        {
+          "name": "color",
+          "type": "String",
+          "mutable": true,
+          "attr": "color"
+        },
+        {
+          "name": "customcolor",
+          "type": "String",
+          "attr": "customcolor"
+        },
+        {
+          "name": "iconfa",
+          "type": "String",
+          "attr": "iconfa"
+        },
+        {
+          "name": "imageurl",
+          "type": "String",
+          "attr": "imageurl"
+        },
+        {
+          "name": "size",
+          "type": "String",
+          "mutable": true,
+          "attr": "size"
+        }
+      ],
+      "shadow": true
+    },
+    {
+      "tag": "eve-st-button",
+      "dependencies": [],
+      "componentClass": "eveTsButton",
+      "componentPath": "components/atoms/eve-st-button/eve-st-button.js",
+      "styles": {
+        "$": {
+          "stylePaths": [
+            "components/atoms/eve-st-button/eve-st-button.scss"
+          ]
+        }
+      },
+      "props": [
+        {
+          "name": "borderradius",
+          "type": "String",
+          "attr": "borderradius"
+        },
+        {
+          "name": "color",
+          "type": "String",
+          "mutable": true,
+          "attr": "color"
+        },
+        {
+          "name": "customcolor",
+          "type": "String",
+          "attr": "customcolor"
+        },
+        {
+          "name": "disabled",
+          "type": "Boolean",
+          "mutable": true,
+          "attr": "disabled"
+        },
+        {
+          "name": "height",
+          "type": "String",
+          "attr": "height"
+        },
+        {
+          "name": "id",
+          "type": "String",
+          "attr": "id"
+        },
+        {
+          "name": "label",
+          "type": "String",
+          "attr": "label"
+        },
+        {
+          "name": "type",
+          "type": "String",
+          "attr": "type"
+        }
+      ],
+      "events": [
+        {
+          "event": "onBlur"
+        },
+        {
+          "event": "onClick"
+        },
+        {
+          "event": "onFocus"
+        }
+      ],
+      "shadow": true
+    },
+    {
+      "tag": "eve-st-checkbox",
+      "dependencies": [],
+      "componentClass": "EveStCheckbox",
+      "componentPath": "components/atoms/eve-st-checkbox/eve-st-checkbox.js",
+      "styles": {
+        "$": {
+          "stylePaths": [
+            "components/atoms/eve-st-checkbox/eve-st-checkbox.scss"
+          ]
+        }
+      },
+      "props": [
+        {
+          "name": "checked",
+          "type": "Boolean",
+          "mutable": true,
+          "attr": "checked"
+        },
+        {
+          "name": "color",
+          "type": "String",
+          "attr": "color"
+        },
+        {
+          "name": "customcolor",
+          "type": "String",
+          "attr": "customcolor"
+        },
+        {
+          "name": "customcolorerror",
+          "type": "String",
+          "attr": "customcolorerror"
+        },
+        {
+          "name": "disabled",
+          "type": "Boolean",
+          "attr": "disabled"
+        },
+        {
+          "name": "errors",
+          "type": "String",
+          "attr": "errors"
+        },
+        {
+          "name": "label",
+          "type": "String",
+          "attr": "label"
+        },
+        {
+          "name": "name",
+          "type": "String",
+          "attr": "name"
+        }
+      ],
+      "listeners": [
+        {
+          "event": "click",
+          "method": "elementClickHandler",
+          "passive": false,
+          "capture": false
+        }
+      ],
+      "events": [
+        {
+          "event": "onChange"
+        }
+      ],
+      "shadow": true
+    },
+    {
+      "tag": "eve-st-dropdown",
+      "dependencies": [
+        "ion-icon"
+      ],
+      "componentClass": "eveStDropDown",
+      "componentPath": "components/atoms/eve-st-dropdown/eve-st-dropdown.js",
+      "styles": {
+        "$": {
+          "stylePaths": [
+            "components/atoms/eve-st-dropdown/eve-st-dropdown.scss"
+          ]
+        }
+      },
+      "props": [
+        {
+          "name": "color",
+          "type": "String",
+          "attr": "color"
+        },
+        {
+          "name": "customcolor",
+          "type": "String",
+          "attr": "customcolor"
+        },
+        {
+          "name": "customcolorerror",
+          "type": "String",
+          "attr": "customcolorerror"
+        },
+        {
+          "name": "disabled",
+          "type": "Boolean",
+          "attr": "disabled"
+        },
+        {
+          "name": "errors",
+          "type": "String",
+          "attr": "errors"
+        },
+        {
+          "name": "imageleftturl",
+          "type": "String",
+          "attr": "imageleftturl"
+        },
+        {
+          "name": "imagerightturl",
+          "type": "String",
+          "attr": "imagerightturl"
+        },
+        {
+          "name": "label",
+          "type": "String",
+          "attr": "label"
+        },
+        {
+          "name": "listitems",
+          "attr": "listitems"
+        },
+        {
+          "name": "name",
+          "type": "String",
+          "attr": "name"
+        },
+        {
+          "name": "placeholder",
+          "type": "String",
+          "attr": "placeholder"
+        },
+        {
+          "name": "value",
+          "mutable": true,
+          "attr": "value"
+        }
+      ],
+      "states": [
+        {
+          "name": "elFocus"
+        },
+        {
+          "name": "elOpen"
+        },
+        {
+          "name": "paddingleft"
+        },
+        {
+          "name": "paddingright"
+        },
+        {
+          "name": "selectedValue"
+        }
+      ],
+      "listeners": [
+        {
+          "event": "body:click",
+          "method": "click",
+          "passive": false,
+          "capture": false
+        }
+      ],
+      "hostElement": {
+        "name": "el"
+      },
+      "events": [
+        {
+          "event": "onBlur"
+        },
+        {
+          "event": "onChange"
+        }
+      ],
+      "shadow": true
+    },
+    {
+      "tag": "eve-st-item",
+      "dependencies": [],
+      "componentClass": "eveStItem",
+      "componentPath": "components/atoms/eve-st-item/eve-st-item.js",
+      "styles": {
+        "$": {
+          "stylePaths": [
+            "components/atoms/eve-st-item/eve-st-item.scss"
+          ]
+        }
+      },
+      "props": [
+        {
+          "name": "line",
+          "type": "String",
+          "attr": "line"
+        }
+      ],
+      "hostElement": {
+        "name": "el"
+      }
+    },
+    {
+      "tag": "eve-st-list",
+      "dependencies": [],
+      "componentClass": "EveStList",
+      "componentPath": "components/atoms/eve-st-list/eve-st-list.js",
+      "styles": {
+        "$": {
+          "stylePaths": [
+            "components/atoms/eve-st-list/eve-st-list.scss"
+          ]
+        }
+      },
+      "hostElement": {
+        "name": "host"
+      },
+      "shadow": true
+    },
+    {
+      "tag": "eve-st-login-standard",
+      "dependencies": [
+        "eve-st-button",
+        "eve-st-textbox",
+        "ion-col",
+        "ion-grid",
+        "ion-row"
+      ],
+      "componentClass": "AppHome",
+      "componentPath": "components/molecules/login/eve-st-login-standar.js",
+      "styles": {
+        "$": {
+          "stylePaths": [
+            "components/molecules/login/eve-st-login-standard.scss"
+          ]
+        }
+      }
+    },
+    {
+      "tag": "eve-st-modal",
+      "dependencies": [
+        "ion-icon"
+      ],
+      "componentClass": "EveStModal",
+      "componentPath": "components/atoms/eve-st-modal/eve-st-modal.js",
+      "styles": {
+        "$": {
+          "stylePaths": [
+            "components/atoms/eve-st-modal/eve-st-modal.scss"
+          ]
+        }
+      },
+      "props": [
+        {
+          "name": "color",
+          "type": "String",
+          "attr": "color"
+        },
+        {
+          "name": "customcolor",
+          "type": "String",
+          "attr": "customcolor"
+        },
+        {
+          "name": "show",
+          "type": "Boolean",
+          "attr": "show"
+        }
+      ],
+      "events": [
+        {
+          "event": "onClose"
+        }
+      ],
+      "shadow": true
+    },
+    {
+      "tag": "eve-st-overlay",
+      "dependencies": [],
+      "componentClass": "EveStOverlay",
+      "componentPath": "components/atoms/eve-st-overlay/eve-st-overlay.js",
+      "styles": {
+        "$": {
+          "stylePaths": [
+            "components/atoms/eve-st-overlay/eve-st-overlay.scss"
+          ]
+        }
+      },
+      "props": [
+        {
+          "name": "closeonclick",
+          "type": "Boolean",
+          "attr": "closeonclick"
+        },
+        {
+          "name": "color",
+          "type": "String",
+          "attr": "color"
+        },
+        {
+          "name": "customcolor",
+          "type": "String",
+          "attr": "customcolor"
+        },
+        {
+          "name": "show",
+          "type": "Boolean",
+          "mutable": true,
+          "attr": "show"
+        }
+      ],
+      "events": [
+        {
+          "event": "onClose"
+        }
+      ],
+      "shadow": true
+    },
+    {
+      "tag": "eve-st-textbox",
+      "dependencies": [],
+      "componentClass": "eveStTextBox",
+      "componentPath": "components/atoms/eve-st-textbox/eve-st-textbox.js",
+      "styles": {
+        "$": {
+          "stylePaths": [
+            "components/atoms/eve-st-textbox/eve-st-textbox.scss"
+          ]
+        }
+      },
+      "props": [
+        {
+          "name": "color",
+          "type": "String",
+          "attr": "color"
+        },
+        {
+          "name": "customcolor",
+          "type": "String",
+          "attr": "customcolor"
+        },
+        {
+          "name": "customcolorerror",
+          "type": "String",
+          "attr": "customcolorerror"
+        },
+        {
+          "name": "disabled",
+          "type": "Boolean",
+          "mutable": true,
+          "attr": "disabled"
+        },
+        {
+          "name": "errors",
+          "type": "String",
+          "attr": "errors"
+        },
+        {
+          "name": "label",
+          "type": "String",
+          "attr": "label"
+        },
+        {
+          "name": "name",
+          "type": "String",
+          "attr": "name"
+        },
+        {
+          "name": "placeholder",
+          "type": "String",
+          "attr": "placeholder"
+        },
+        {
+          "name": "textcolor",
+          "type": "String",
+          "attr": "textcolor"
+        },
+        {
+          "name": "type",
+          "type": "String",
+          "mutable": true,
+          "attr": "type"
+        },
+        {
+          "name": "usepattern",
+          "type": "String",
+          "attr": "usepattern"
+        },
+        {
+          "name": "value",
+          "type": "String",
+          "mutable": true,
+          "attr": "value"
+        }
+      ],
+      "states": [
+        {
+          "name": "elFocus"
+        }
+      ],
+      "listeners": [
+        {
+          "event": "keypress",
+          "method": "handleKeyPress",
+          "passive": false,
+          "capture": false
+        }
+      ],
+      "events": [
+        {
+          "event": "onBlur"
+        },
+        {
+          "event": "onChange"
+        },
+        {
+          "event": "onFocus"
+        }
+      ],
+      "shadow": true
+    }
+  ],
+  "collections": [
+    {
+      "name": "@ionic/core",
+      "tags": [
+        "ion-action-sheet",
+        "ion-action-sheet-controller",
+        "ion-alert",
+        "ion-alert-controller",
+        "ion-anchor",
+        "ion-app",
+        "ion-avatar",
+        "ion-back-button",
+        "ion-backdrop",
+        "ion-badge",
+        "ion-button",
+        "ion-buttons",
+        "ion-card",
+        "ion-card-content",
+        "ion-card-header",
+        "ion-card-subtitle",
+        "ion-card-title",
+        "ion-checkbox",
+        "ion-chip",
+        "ion-col",
+        "ion-content",
+        "ion-datetime",
+        "ion-fab",
+        "ion-fab-button",
+        "ion-fab-list",
+        "ion-footer",
+        "ion-grid",
+        "ion-header",
+        "ion-img",
+        "ion-infinite-scroll",
+        "ion-infinite-scroll-content",
+        "ion-input",
+        "ion-item",
+        "ion-item-divider",
+        "ion-item-group",
+        "ion-item-option",
+        "ion-item-options",
+        "ion-item-sliding",
+        "ion-label",
+        "ion-list",
+        "ion-list-header",
+        "ion-loading",
+        "ion-loading-controller",
+        "ion-menu",
+        "ion-menu-button",
+        "ion-menu-controller",
+        "ion-menu-toggle",
+        "ion-modal",
+        "ion-modal-controller",
+        "ion-nav",
+        "ion-nav-pop",
+        "ion-nav-push",
+        "ion-nav-set-root",
+        "ion-note",
+        "ion-picker",
+        "ion-picker-column",
+        "ion-picker-controller",
+        "ion-popover",
+        "ion-popover-controller",
+        "ion-progress-bar",
+        "ion-radio",
+        "ion-radio-group",
+        "ion-range",
+        "ion-refresher",
+        "ion-refresher-content",
+        "ion-reorder",
+        "ion-reorder-group",
+        "ion-ripple-effect",
+        "ion-route",
+        "ion-route-redirect",
+        "ion-router",
+        "ion-router-outlet",
+        "ion-row",
+        "ion-searchbar",
+        "ion-segment",
+        "ion-segment-button",
+        "ion-select",
+        "ion-select-option",
+        "ion-select-popover",
+        "ion-skeleton-text",
+        "ion-slide",
+        "ion-slides",
+        "ion-spinner",
+        "ion-split-pane",
+        "ion-tab",
+        "ion-tab-bar",
+        "ion-tab-button",
+        "ion-tabs",
+        "ion-text",
+        "ion-textarea",
+        "ion-thumbnail",
+        "ion-title",
+        "ion-toast",
+        "ion-toast-controller",
+        "ion-toggle",
+        "ion-toolbar",
+        "ion-virtual-scroll"
+      ]
+    },
+    {
+      "name": "ionicons",
+      "tags": [
+        "ion-icon"
+      ]
+    }
+  ],
+  "compiler": {
+    "name": "@stencil/core",
+    "version": "0.18.1",
+    "typescriptVersion": "3.3.3"
+  },
+  "bundles": []
+}

@@ -1,0 +1,102 @@
+::-webkit-scrollbar-track {
+  border-radius: 25px;
+  background-color: #F5F5F5; }
+
+::-webkit-scrollbar {
+  width: 3px;
+  background-color: #F5F5F5; }
+
+::-webkit-scrollbar-thumb {
+  border-radius: 25px;
+  background-color: #cfcfcf; }
+
+:host {
+  width: 100%;
+  padding-bottom: 8px; }
+  :host .eve-texbox {
+    box-sizing: border-box;
+    width: 100%; }
+    :host .eve-texbox .error-message {
+      height: 16px;
+      color: #e24d4d;
+      font-size: 16px; }
+    :host .eve-texbox label, :host .eve-texbox input, :host .eve-texbox textarea {
+      display: block;
+      border: 0; }
+    :host .eve-texbox .input_icon_left {
+      position: absolute;
+      left: 16px; }
+    :host .eve-texbox .input_icon_right {
+      position: absolute;
+      right: 16px; }
+    :host .eve-texbox .input-grapper {
+      display: flex;
+      align-items: center;
+      width: 100%; }
+      :host .eve-texbox .input-grapper input, :host .eve-texbox .input-grapper textarea {
+        box-sizing: border-box;
+        font-size: 16px;
+        font-family: "Josefin Sans", sans-serif;
+        width: 100%;
+        height: 24px;
+        background-color: transparent;
+        outline: none;
+        color: #666c7e; }
+        :host .eve-texbox .input-grapper input.input_padding_left, :host .eve-texbox .input-grapper textarea.input_padding_left {
+          padding-left: 32px; }
+        :host .eve-texbox .input-grapper input.input_padding_right, :host .eve-texbox .input-grapper textarea.input_padding_right {
+          padding-right: 32px; }
+        :host .eve-texbox .input-grapper input.disable_input, :host .eve-texbox .input-grapper textarea.disable_input {
+          background-color: #fff; }
+          :host .eve-texbox .input-grapper input.disable_input::placeholder, :host .eve-texbox .input-grapper textarea.disable_input::placeholder {
+            /* Chrome, Firefox, Opera, Safari 10.1+ */
+            color: #fcc;
+            opacity: 1;
+            /* Firefox */ }
+          :host .eve-texbox .input-grapper input.disable_input::-ms-input-placeholder, :host .eve-texbox .input-grapper textarea.disable_input::-ms-input-placeholder {
+            /* Microsoft Edge */
+            color: #fcc; }
+      :host .eve-texbox .input-grapper textarea {
+        height: 16em;
+        resize: none; }
+    :host .eve-texbox label {
+      position: relative;
+      top: 0;
+      font-size: 16px;
+      font-family: "Josefin Sans", sans-serif;
+      line-height: 16px;
+      transition: all .300s ease-in-out;
+      color: #5bc500;
+      opacity: 1; }
+      :host .eve-texbox label.success {
+        color: #5bc500; }
+      :host .eve-texbox label.info {
+        color: #00A9E0; }
+      :host .eve-texbox label.warning {
+        color: #FFB74D; }
+      :host .eve-texbox label.danger {
+        color: #e24d4d; }
+      :host .eve-texbox label.label_fade {
+        top: 8px;
+        opacity: 0;
+        transition: all .300s ease-in-out;
+        transform: translateY(8); }
+      :host .eve-texbox label.disable_input {
+        color: #fcc; }
+    :host .eve-texbox .bar {
+      min-height: 1px;
+      background-color: #666c7e;
+      width: 100%; }
+      :host .eve-texbox .bar.input_focus {
+        transform: scaleY(1.6);
+        transition: all 0.3s ease-in; }
+      :host .eve-texbox .bar.success {
+        background-color: #5bc500; }
+      :host .eve-texbox .bar.info {
+        background-color: #00A9E0; }
+      :host .eve-texbox .bar.warning {
+        background-color: #FFB74D; }
+      :host .eve-texbox .bar.danger {
+        background-color: #e24d4d; }
+      :host .eve-texbox .bar.disable_input {
+        background-color: #fcc; }

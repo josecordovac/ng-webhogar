@@ -1,0 +1,13 @@
+:host {
+    ion-content {
+        --background: linear-gradient(-135deg, var(--ion-color-medium), var(--ion-color-light));
+    
+        .logo {
+            width: 66px;
+            height: 48px;
+            margin: 32px auto 8px;
+            background: url("/assets/svg/m_movistar.svg") no-repeat;
+            background-size: 100%;
+          }
+    }
+}

@@ -1,0 +1,30 @@
+
+@font-face {
+  font-family: TelefonicaWeb-Hand;
+  src: url(/assets/fonts/TelefonicaWeb-Hand.eot);
+  src: url(/assets/fonts/TelefonicaWeb-Hand.ttf) format('truetype');
+  src: url(/assets/fonts/TelefonicaWeb-Hand.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Roboto Bold Condensed';
+  src: url(/assets/fonts/Roboto-Medium.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Roboto Bold Condensed';
+  src: url(/assets/fonts/fontello.woff2) format('woff2');;
+}
+
+@font-face {
+  font-family: Roboto-Regular;
+  src: url(/assets/fonts/Roboto-Regular.ttf) format('truetype')
+}
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'arial', 'sans-serif', 'TelefonicaWeb-Hand', 'Roboto-Regular','Roboto-Medium', 'fontello';
+}

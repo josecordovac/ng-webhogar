@@ -1,0 +1,179 @@
+
+@import '../../style.scss';
+
+
+.eve-button {
+  background: $primary-color;
+  //border: 1px solid main-color(500);
+  border: 0.0625rem solid transparent;
+  cursor: pointer;
+  color: white;
+  height: 45px;
+  width: 200px;
+  font-size: $main-fs;
+  font-weight:bolder;
+  border-radius: $main-br;
+  width: 100%;
+
+  button:disabled {
+    cursor: auto;
+    pointer-events: none;
+  }
+  button:focus { outline: none; }
+
+  &.border-radius {
+    border-radius: 3px;
+  }
+
+  &.success {
+    background: $success-color;
+    border-color: $success-color;
+    &:disabled {
+      filter: brightness(90%);
+    }
+    &:hover {
+      &:not(:disabled ) {
+        filter: brightness(110%);
+      }
+    }
+  }
+
+  &.info {
+    background: $info-color;
+    border-color: $info-color;
+    &:disabled {
+      filter: brightness(90%);
+    }
+    &:hover {
+      &:not(:disabled ) {
+        filter: brightness(110%);
+      }
+    }
+  }
+  &.warning {
+    background: $warning-color;
+    border-color: $warning-color;
+    &:disabled {
+      filter: brightness(90%);
+    }
+    &:hover {
+      &:not(:disabled ) {
+        filter: brightness(110%);
+      }
+    }
+  }
+  &.danger {
+    background: $error-color;
+    border-color: $error-color;
+    &:disabled {
+      filter: brightness(90%);
+    }
+    &:hover {
+      &:not(:disabled ) {
+        filter: brightness(110%);
+      }
+    }
+  }
+
+  &.custom-color {
+      
+    &:disabled {
+      filter: brightness(90%);
+    }
+    &:hover {
+      &:not(:disabled ) {
+        filter: brightness(110%);
+      }
+    }
+  }
+
+  &.outline {
+    background: none !important;
+    color: inherit;
+
+    &.success {
+      color: $success-color;
+      &:disabled {
+        filter: brightness(90%);
+      }
+      &:hover {
+        &:not(:disabled ) {
+          filter: brightness(110%);
+        }
+      }
+    }
+    &.info {
+      color: $info-color;
+      &:disabled {
+        filter: brightness(90%);
+      }
+      &:hover {
+        &:not(:disabled ) {
+          filter: brightness(110%);
+        }
+      }
+    }
+    &.warning {
+      color: $warning-color;
+      &:disabled {
+        filter: brightness(90%);
+      }
+      &:hover {
+        &:not(:disabled ) {
+          filter: brightness(110%);
+        }
+      }
+    }
+    &.danger {
+      color: $danger-color;
+      &:disabled {
+        filter: brightness(90%);
+      }
+      &:hover {
+        &:not(:disabled ) {
+          filter: brightness(110%);
+        }
+      }
+    }
+
+    &.custom-color {
+
+      &:disabled {
+        color: $disable-color !important;
+        border: 0.0625rem solid $danger-color-disabled !important;
+        background: white !important;
+      }
+      &:hover {
+        &:not(:disabled ) {
+          border: 0.0625rem solid $danger-color-hover !important;
+          background: $danger-color-hover !important;
+        }
+      }
+    }
+
+  }
+
+  &.custom-color {
+    &:not(.outline) {
+      color: #fff !important;
+    }
+  }
+
+  .ripple {
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.2);
+    transform: scale(0);
+    position: absolute;
+    opacity: 1;
+    animation: rippleDrop .4s linear;
+  }
+  
+  @keyframes rippleDrop {
+    100% {
+      transform: scale(2);
+      opacity: 0;
+    }
+  }
+
+}
+

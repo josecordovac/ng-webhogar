@@ -1,0 +1,63 @@
+::-webkit-scrollbar-track {
+  border-radius: 25px;
+  background-color: #F5F5F5; }
+
+::-webkit-scrollbar {
+  width: 3px;
+  background-color: #F5F5F5; }
+
+::-webkit-scrollbar-thumb {
+  border-radius: 25px;
+  background-color: #cfcfcf; }
+
+.flex_100 {
+  flex: 100%; }
+
+.eve-modal {
+  position: fixed;
+  /* Stay in place */
+  left: 50%;
+  top: 50%;
+  z-index: 120;
+  /* Sit on top */
+  width: 100%;
+  /* Full width */
+  overflow: auto;
+  /* Enable scroll if needed */
+  min-height: 124px;
+  transform: translate(-50%, -50%);
+  -webkit-transition: all 0.15s ease-in-out;
+  transition: all 0.15s ease-in-out; }
+  .eve-modal .modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    width: 80%;
+    border-radius: 25px;
+    border-top-right-radius: 0;
+    border-top-left-radius: 0; }
+    .eve-modal .modal-content .content {
+      padding: 16px; }
+    .eve-modal .modal-content .footer {
+      padding: 16px; }
+    .eve-modal .modal-content .header {
+      position: relative;
+      padding: 16px; }
+      .eve-modal .modal-content .header .close_icon {
+        position: absolute;
+        right: 16px;
+        top: 18px; }
+      .eve-modal .modal-content .header.success {
+        color: white;
+        background-color: #5bc500; }
+      .eve-modal .modal-content .header.info {
+        color: white;
+        background-color: #00A9E0; }
+      .eve-modal .modal-content .header.warning {
+        color: white;
+        background-color: #FFB74D; }
+      .eve-modal .modal-content .header.danger {
+        color: white;
+        background-color: #e24d4d; }
+      .eve-modal .modal-content .header.purple {
+        color: white;
+        background: #954897; }

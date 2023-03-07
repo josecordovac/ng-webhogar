@@ -1,0 +1,86 @@
+
+body, html {
+  margin: 0 auto;
+}
+
+body {
+  font-family: 'Montserrat';
+  font-size: 18px;
+
+}
+
+a {
+  text-decoration: none;
+}
+
+.logo {
+  color: #5bc500;
+}
+
+.box-demo {
+  box-sizing: border-box;
+  width: 100%;
+  border: 1px solid #666c7e;
+  padding: 8px;
+  margin-bottom: 4px;
+}
+
+.left {
+  flex: 24%;
+  padding: 16px 8px;
+  border: 1px solid #666c7e;
+  margin-right: 2px;
+}
+
+.left h2 {
+  padding-left: 8px;
+}
+
+.right {
+  flex: 75%;
+  border: 1px solid #666c7e;
+  padding: 30px;
+}
+
+h1 {
+  font-family: verdana;
+}
+
+h2 {
+  font-family: verdana;
+}
+
+h3 {
+  font-family: verdana;
+}
+
+h4 {
+  font-family: verdana;
+}
+
+p {
+    font-family: verdana;
+    font-size: 14px;
+    padding-left: 6px;
+}
+
+p:hover {
+    border-left: 6px solid  #5bc500;
+}
+
+.item_left {
+  margin-right: 4px;
+  top: -3px;
+  position: relative;
+}
+
+.item_right {
+  margin-left: 4px;
+  top: -3px;
+  position: relative;
+}
+
+.alert_title {
+  font-size: 16px;
+  height: 16px;
+}

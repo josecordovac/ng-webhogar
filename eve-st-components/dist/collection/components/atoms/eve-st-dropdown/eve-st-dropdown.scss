@@ -1,0 +1,197 @@
+@import '../../style.scss';
+
+:host {
+ 
+ width: 100%;
+
+  .eve-ng-dropdown {
+    position: relative;
+    width: 100%;
+    .input-grapper {
+      display: flex;
+      align-items: stretch;
+      width: 100%;
+      .display {
+        font-size: $main-fs;
+        font-family: $main-ff;
+        line-height: $main-lh;
+        color: $main-phc;
+        width: 100%;
+        &.white {
+          color: $white-color;
+        }
+      }
+    }
+
+    .error-message {
+      color: $error-color;
+      margin-top: 4px;
+      height: 8px;
+      font-size: 14px;
+    }
+
+    label {
+      display: block; 
+      border: 0;
+    }
+
+    label {
+      font-size: $main-fs;
+      font-family: $main-ff;
+      line-height: $main-lh;
+
+      color: main-color(500);
+      opacity: 1;
+
+      &.success {
+        color: $success-color;
+      }
+      &.info {
+        color: $info-color;
+      }
+      &.warning {
+        color: $warning-color;
+      }
+      &.danger {
+        color: $error-color;
+      }
+      &.white {
+        color: $white-color;
+      }
+      &.purple {
+        color: $purple-color;
+      }
+    }
+
+    .bar 	{ 
+      height: 1px;
+      background-color: main-color(500);
+      position:relative;
+      display:block; 
+      width:100%;
+
+      &.success {
+        background-color: $success-color;
+      }
+      &.info {
+        background-color: $info-color;
+      }
+      &.warning {
+        background-color: $warning-color;
+      }
+      &.danger {
+        background-color: $error-color;
+      }
+      &.white {
+        background-color: $white-color;
+      }
+      &.purple {
+        background-color: $purple-color;
+      }
+    }
+  
+
+  .eve-dropdown {
+      /* Size and position */
+      position: relative;
+      width: 100%;
+      height: 29px;
+      margin: 0 auto;
+      padding-left: 0;
+      padding-top: 6px;
+      padding-bottom: 0px;
+      /* Styles */
+      background: #fff;
+      border-radius: 4px;
+      // border: 1px solid #e8e6e5;
+      box-shadow: none;
+      cursor: pointer;
+      outline: none;
+      background-color: transparent;
+    
+      /* Font settings */
+      font-size: $main-fs;
+      font-family: $main-ff;
+
+      &.success {
+        color: $success-color;
+      }
+      &.info {
+        color: $info-color;
+      }
+      &.warning {
+        color: $warning-color;
+      }
+      &.danger {
+        color: $error-color;
+      }
+      &.white {
+        color: $white-color !important;
+      }
+
+      .arrow {
+        position: absolute;
+        top: 16px;
+        right: 8px;
+        transition: all .300s ease-in-out;
+        transform: translateY(-6px);
+  
+      }
+
+      .dropdown {
+        /* Size & position */
+        padding-left: 0;
+        position: absolute;
+        top: 72%;
+        left: 0;
+        right: 0;
+        z-index: 2;
+      
+        /* Styles */
+        background: white;
+        border-radius: 5px;
+        border: 1px solid #e8e6e5;
+        box-shadow: none;
+        font-weight: normal;
+        transition: all 0.3s ease-in;
+        list-style: none;
+
+        overflow-y: scroll;
+        max-height: 120px;
+      
+        /* Hiding */
+        opacity: 0;
+        pointer-events: none;
+
+
+        li {
+          display: block;
+          padding-left: 19px;
+          padding-top: 6px;
+          padding-bottom: 3px;
+          text-decoration: none;
+          color: #6e6259;
+          transition: all 0.3s ease-out;
+          &:hover {
+            color: $main-fc;
+            background: #F5F5F5;
+          }
+          &:first-of-type {
+            border-radius: 4px 4px 0 0;
+          }
+          &:last-of-type {
+            border-radius: 0 0 4px 4px;
+            border: none;
+          }      
+        }
+      }
+    }
+    
+    .eve-dropdown.active .dropdown {
+      opacity: 1;
+      pointer-events: auto;
+    }  
+
+  }
+
+}

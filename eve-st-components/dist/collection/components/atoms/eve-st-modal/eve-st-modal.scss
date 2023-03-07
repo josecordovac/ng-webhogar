@@ -1,0 +1,71 @@
+
+
+@import '../../style.scss';
+
+.flex_100 {
+  flex: 100%;
+}
+
+.eve-modal {
+    position: fixed; /* Stay in place */
+    left: 50%;
+    top: 50%;
+    z-index: 120; /* Sit on top */
+    width: 100%; /* Full width */
+    overflow: auto; /* Enable scroll if needed */
+    min-height: 124px;
+    transform: translate(-50%, -50%);
+
+    -webkit-transition: all 0.15s ease-in-out;
+    transition: all 0.15s ease-in-out;
+
+    .modal-content {
+        background-color: #fefefe;
+        margin: auto;
+        width: 80%;
+        border-radius: 25px;
+        border-top-right-radius: 0;
+        border-top-left-radius: 0;
+
+        .content {
+            padding: 16px;
+        }
+
+        .footer {
+            padding: 16px;
+        }    
+
+        .header {
+            position: relative;
+            padding: 16px;
+
+            .close_icon {
+                position: absolute;
+                right: 16px;
+                top: 18px;
+            }
+
+             &.success {
+                color: white;
+                background-color: $success-color;      
+              }
+              &.info {
+                color: white;
+                background-color: $info-color;
+              }
+              &.warning {
+                color: white;
+                background-color: $warning-color;
+              }
+              &.danger {
+                color: white;
+                background-color: $error-color;
+              }
+              &.purple {
+                color: white;
+                background: $purple-color;
+              }
+        }
+
+    }
+}

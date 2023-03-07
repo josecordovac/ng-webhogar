@@ -1,0 +1,83 @@
+::-webkit-scrollbar-track {
+  border-radius: 25px;
+  background-color: #F5F5F5; }
+
+::-webkit-scrollbar {
+  width: 3px;
+  background-color: #F5F5F5; }
+
+::-webkit-scrollbar-thumb {
+  border-radius: 25px;
+  background-color: #cfcfcf; }
+
+:host {
+  height: 22px; }
+
+.eve-ng-checkbox {
+  position: relative;
+  height: 20px;
+  padding-left: 28px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+  .eve-ng-checkbox .error-message {
+    color: #e24d4d;
+    font-size: 12px; }
+
+/* Hide the browser's default checkbox */
+.eve-ng-checkbox input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0; }
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 22px;
+  width: 22px;
+  background-color: #eee;
+  border-radius: 4px; }
+
+/* On mouse-over, add a grey background color */
+.eve-ng-checkbox:hover input ~ .checkmark {
+  background-color: #ccc; }
+
+/* When the checkbox is checked, add a blue background */
+.eve-ng-checkbox input:checked ~ .checkmark {
+  background-color: main-color(500); }
+  .eve-ng-checkbox input:checked ~ .checkmark.success-checkbox {
+    background: #5bc500; }
+  .eve-ng-checkbox input:checked ~ .checkmark.info-checkbox {
+    background: #00A9E0; }
+  .eve-ng-checkbox input:checked ~ .checkmark.warning-checkbox {
+    background: #FFB74D; }
+  .eve-ng-checkbox input:checked ~ .checkmark.danger-checkbox {
+    background: #e24d4d; }
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none; }
+
+/* Show the checkmark when checked */
+.eve-ng-checkbox input:checked ~ .checkmark:after {
+  display: block; }
+
+/* Style the checkmark/indicator */
+.eve-ng-checkbox .checkmark:after {
+  left: 7px;
+  top: 1px;
+  width: 6px;
+  height: 14px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg); }

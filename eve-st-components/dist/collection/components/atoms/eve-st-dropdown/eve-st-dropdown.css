@@ -1,0 +1,148 @@
+::-webkit-scrollbar-track {
+  border-radius: 25px;
+  background-color: #F5F5F5; }
+
+::-webkit-scrollbar {
+  width: 3px;
+  background-color: #F5F5F5; }
+
+::-webkit-scrollbar-thumb {
+  border-radius: 25px;
+  background-color: #cfcfcf; }
+
+:host {
+  width: 100%; }
+  :host .eve-ng-dropdown {
+    position: relative;
+    width: 100%; }
+    :host .eve-ng-dropdown .input-grapper {
+      display: flex;
+      align-items: stretch;
+      width: 100%; }
+      :host .eve-ng-dropdown .input-grapper .display {
+        font-size: 16px;
+        font-family: "Josefin Sans", sans-serif;
+        line-height: 16px;
+        color: #f0f0f0;
+        width: 100%; }
+        :host .eve-ng-dropdown .input-grapper .display.white {
+          color: #fff; }
+    :host .eve-ng-dropdown .error-message {
+      color: #e24d4d;
+      margin-top: 4px;
+      height: 8px;
+      font-size: 14px; }
+    :host .eve-ng-dropdown label {
+      display: block;
+      border: 0; }
+    :host .eve-ng-dropdown label {
+      font-size: 16px;
+      font-family: "Josefin Sans", sans-serif;
+      line-height: 16px;
+      color: main-color(500);
+      opacity: 1; }
+      :host .eve-ng-dropdown label.success {
+        color: #5bc500; }
+      :host .eve-ng-dropdown label.info {
+        color: #00A9E0; }
+      :host .eve-ng-dropdown label.warning {
+        color: #FFB74D; }
+      :host .eve-ng-dropdown label.danger {
+        color: #e24d4d; }
+      :host .eve-ng-dropdown label.white {
+        color: #fff; }
+      :host .eve-ng-dropdown label.purple {
+        color: #954897; }
+    :host .eve-ng-dropdown .bar {
+      height: 1px;
+      background-color: main-color(500);
+      position: relative;
+      display: block;
+      width: 100%; }
+      :host .eve-ng-dropdown .bar.success {
+        background-color: #5bc500; }
+      :host .eve-ng-dropdown .bar.info {
+        background-color: #00A9E0; }
+      :host .eve-ng-dropdown .bar.warning {
+        background-color: #FFB74D; }
+      :host .eve-ng-dropdown .bar.danger {
+        background-color: #e24d4d; }
+      :host .eve-ng-dropdown .bar.white {
+        background-color: #fff; }
+      :host .eve-ng-dropdown .bar.purple {
+        background-color: #954897; }
+    :host .eve-ng-dropdown .eve-dropdown {
+      /* Size and position */
+      position: relative;
+      width: 100%;
+      height: 29px;
+      margin: 0 auto;
+      padding-left: 0;
+      padding-top: 6px;
+      padding-bottom: 0px;
+      /* Styles */
+      background: #fff;
+      border-radius: 4px;
+      box-shadow: none;
+      cursor: pointer;
+      outline: none;
+      background-color: transparent;
+      /* Font settings */
+      font-size: 16px;
+      font-family: "Josefin Sans", sans-serif; }
+      :host .eve-ng-dropdown .eve-dropdown.success {
+        color: #5bc500; }
+      :host .eve-ng-dropdown .eve-dropdown.info {
+        color: #00A9E0; }
+      :host .eve-ng-dropdown .eve-dropdown.warning {
+        color: #FFB74D; }
+      :host .eve-ng-dropdown .eve-dropdown.danger {
+        color: #e24d4d; }
+      :host .eve-ng-dropdown .eve-dropdown.white {
+        color: #fff !important; }
+      :host .eve-ng-dropdown .eve-dropdown .arrow {
+        position: absolute;
+        top: 16px;
+        right: 8px;
+        transition: all .300s ease-in-out;
+        transform: translateY(-6px); }
+      :host .eve-ng-dropdown .eve-dropdown .dropdown {
+        /* Size & position */
+        padding-left: 0;
+        position: absolute;
+        top: 72%;
+        left: 0;
+        right: 0;
+        z-index: 2;
+        /* Styles */
+        background: white;
+        border-radius: 5px;
+        border: 1px solid #e8e6e5;
+        box-shadow: none;
+        font-weight: normal;
+        transition: all 0.3s ease-in;
+        list-style: none;
+        overflow-y: scroll;
+        max-height: 120px;
+        /* Hiding */
+        opacity: 0;
+        pointer-events: none; }
+        :host .eve-ng-dropdown .eve-dropdown .dropdown li {
+          display: block;
+          padding-left: 19px;
+          padding-top: 6px;
+          padding-bottom: 3px;
+          text-decoration: none;
+          color: #6e6259;
+          transition: all 0.3s ease-out; }
+          :host .eve-ng-dropdown .eve-dropdown .dropdown li:hover {
+            color: #666c7e;
+            background: #F5F5F5; }
+          :host .eve-ng-dropdown .eve-dropdown .dropdown li:first-of-type {
+            border-radius: 4px 4px 0 0; }
+          :host .eve-ng-dropdown .eve-dropdown .dropdown li:last-of-type {
+            border-radius: 0 0 4px 4px;
+            border: none; }
+    :host .eve-ng-dropdown .eve-dropdown.active .dropdown {
+      opacity: 1;
+      pointer-events: auto; }

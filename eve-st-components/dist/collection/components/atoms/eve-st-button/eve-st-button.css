@@ -1,0 +1,110 @@
+::-webkit-scrollbar-track {
+  border-radius: 25px;
+  background-color: #F5F5F5; }
+
+::-webkit-scrollbar {
+  width: 3px;
+  background-color: #F5F5F5; }
+
+::-webkit-scrollbar-thumb {
+  border-radius: 25px;
+  background-color: #cfcfcf; }
+
+.eve-button {
+  background: #5bc500;
+  border: 0.0625rem solid transparent;
+  cursor: pointer;
+  color: white;
+  height: 45px;
+  width: 200px;
+  font-size: 16px;
+  font-weight: bolder;
+  border-radius: 4px;
+  width: 100%; }
+  .eve-button button:disabled {
+    cursor: auto;
+    pointer-events: none; }
+  .eve-button button:focus {
+    outline: none; }
+  .eve-button.border-radius {
+    border-radius: 3px; }
+  .eve-button.success {
+    background: #5bc500;
+    border-color: #5bc500; }
+    .eve-button.success:disabled {
+      filter: brightness(90%); }
+    .eve-button.success:hover:not(:disabled) {
+      filter: brightness(110%); }
+  .eve-button.info {
+    background: #00A9E0;
+    border-color: #00A9E0; }
+    .eve-button.info:disabled {
+      filter: brightness(90%); }
+    .eve-button.info:hover:not(:disabled) {
+      filter: brightness(110%); }
+  .eve-button.warning {
+    background: #FFB74D;
+    border-color: #FFB74D; }
+    .eve-button.warning:disabled {
+      filter: brightness(90%); }
+    .eve-button.warning:hover:not(:disabled) {
+      filter: brightness(110%); }
+  .eve-button.danger {
+    background: #e24d4d;
+    border-color: #e24d4d; }
+    .eve-button.danger:disabled {
+      filter: brightness(90%); }
+    .eve-button.danger:hover:not(:disabled) {
+      filter: brightness(110%); }
+  .eve-button.custom-color:disabled {
+    filter: brightness(90%); }
+  .eve-button.custom-color:hover:not(:disabled) {
+    filter: brightness(110%); }
+  .eve-button.outline {
+    background: none !important;
+    color: inherit; }
+    .eve-button.outline.success {
+      color: #5bc500; }
+      .eve-button.outline.success:disabled {
+        filter: brightness(90%); }
+      .eve-button.outline.success:hover:not(:disabled) {
+        filter: brightness(110%); }
+    .eve-button.outline.info {
+      color: #00A9E0; }
+      .eve-button.outline.info:disabled {
+        filter: brightness(90%); }
+      .eve-button.outline.info:hover:not(:disabled) {
+        filter: brightness(110%); }
+    .eve-button.outline.warning {
+      color: #FFB74D; }
+      .eve-button.outline.warning:disabled {
+        filter: brightness(90%); }
+      .eve-button.outline.warning:hover:not(:disabled) {
+        filter: brightness(110%); }
+    .eve-button.outline.danger {
+      color: #e24d4d; }
+      .eve-button.outline.danger:disabled {
+        filter: brightness(90%); }
+      .eve-button.outline.danger:hover:not(:disabled) {
+        filter: brightness(110%); }
+    .eve-button.outline.custom-color:disabled {
+      color: #fcc !important;
+      border: 0.0625rem solid #fcc !important;
+      background: white !important; }
+    .eve-button.outline.custom-color:hover:not(:disabled) {
+      border: 0.0625rem solid #fcc !important;
+      background: #fcc !important; }
+  .eve-button.custom-color:not(.outline) {
+    color: #fff !important; }
+  .eve-button .ripple {
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.2);
+    transform: scale(0);
+    position: absolute;
+    opacity: 1;
+    animation: rippleDrop .4s linear; }
+
+@keyframes rippleDrop {
+  100% {
+    transform: scale(2);
+    opacity: 0; } }
